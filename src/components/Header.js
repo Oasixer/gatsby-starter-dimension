@@ -1,18 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Particles from 'react-particles-js';
+import Container from './container.js'
+import styles from './styles.css'
+
+
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div>
-        <Particles
+
+          <Particles
           params={{
+            
             particles: {
               //color: {
               //  value: "#000000"
               //}
               
               number: {
-              value: 90,
+              value: 10,
               density: {
                 enable: true,
                 value_area: 800
@@ -123,7 +128,6 @@ const Header = (props) => (
           
         }}
       />
-    </div> 
         <div className="content">
             <div className="inner">
                 <h1>Kaelan Moffett-Steinke</h1>

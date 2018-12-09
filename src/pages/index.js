@@ -91,9 +91,11 @@ class IndexPage extends React.Component {
 
   render() {
     return (
+      
       <Layout location={this.props.location}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
+            
             <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
             <Main
               isArticleVisible={this.state.isArticleVisible}
@@ -102,11 +104,14 @@ class IndexPage extends React.Component {
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
+              
             />
+            
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
         </div>
+        
       </Layout>
     )
   }
